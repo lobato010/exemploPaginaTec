@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    border-top: solid 26px rgb(30, 30, 51);  
+}
+header{
+    border-bottom: solid gray 2px;
+}
+.cabecalho{
+    margin-inline: 100px;
+}
+header .menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+header .menu .logo{
+    font-size: 20px;
+    display: flex;
+    padding: 20px;
+    color: white;
+    margin: 4px;
+
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 3px;
+    list-style: none;
+}
+
+header ul li a{
+    padding: 4px;
+    color: rgb(30, 30, 51);
+    font-size: 18px;
+}
+
+main{
+    margin-inline: 100px;
+}
+
+main .info{
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+
+}
+
+main p{
+    margin-top: 10px;
+    text-align: left;
+    width: 30%;
+}
+
+main .img{
+    margin: 10px;
+    
+}
+
+main .box .destaque{
+    display: flex;   
+    justify-content: space-between;
+}
+
+main .box .destaque img{
+    padding-inline: 10px;
+    width: 20%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.menu-footer{
+    margin: 10px;
+    padding: 20px;
+}
+
+.menu-footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 4px;
+}
+
+.menu-footer ul li{
+    padding: 4px;
+    color: white;
+}
+
+@media (max-width: 980px) {
+    main .box .destaque{
+        display: flex;
+        flex-direction: column;   
+    }
+    .box .destaque img{
+        margin: 10px;   
+    }   
+}
+@media (max-width: 720px) {
+    header .menu .logo{
+        height: 1%;
+        
+    }
+    .cabecalho{
+        margin: 0;
+    }
+    main .img{
+        display: none;
+    }
+
+    main p{
+        text-align: center;
+        width: 100%;
+    }
+    .box h2{
+        text-align: center;
+    }
+    main {
+        margin: 0;
+    }
+    main .box .destaque img{
+        display: flex;
+        margin-inline: auto;
+        width: 50%;
+    }
+}
